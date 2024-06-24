@@ -4,6 +4,7 @@
         <th>{{element.count}}</th>
         <th>{{element.category}}</th>
         <th>{{element.sum}}</th>
+        <th><img :src="element.image"></th>
 </template>
 
 <script>    
@@ -11,7 +12,7 @@
 export default {
     name: "CatalogElement",
     props: {
-        element: Array
+        element: Object
     }
 }
 </script>
